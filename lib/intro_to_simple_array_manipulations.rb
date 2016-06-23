@@ -1,46 +1,48 @@
-def using_push(array, string)
-  countries_in_western_africa = ["Benin", "Carpe Verde", "Gambia", "Liberia", "Mali"]
-  next_country = "Niger"
-  countries_in_western_africa.push(next_country)
-end
 
-def using_unshift (array, string)
-  neighborhoods_in_northwest_brooklyn = ["Brooklyn Yards", "Cadman Plaza", "Clinton Hill", "Downtown Brooklyn", "DUMBO"]
-  new_neighborhood = "Brooklyn Heights"
-  neighborhoods_in_northwest_brooklyn.unshift (new_neighborhood)
-end
+ def using_push(array, string)
+   array.push(string)
+ end
 
-def using_pop (array)
-  great_hits_of_the_nineties = ["Baby One More Time", "Smells Like Teen Spirit", "Missing", "Walking On The Sun", "Hard Knock Life", "Losing My Religion"]
-  great_hits_of_the_nineties.pop
-end
+ def using_unshift(array, string)
+   array.unshift(string)
+ end
 
+ def using_pop(array)
+   array.pop
+ end
 
-def pop_with_args (number)
-  chars_in_game_of_thrones = ["Danny T.", "Tyrion Lannister", "Stable Boy", "Sandor Clegane, aka The Mountain"]
-  chars_arya_killed = pop_with_args(chars_in_game_of_thrones)
-end
+ def pop_with_args(array)
+   array.pop(2)
+ end
+ 
+ def using_shift(array)
+   array.shift
+ end
 
-def using_shift
-end
+ def shift_with_args(array)
+   array.shift(2)
+ end
 
-def shift_with_args
-end
+ def using_concat(array1, array2)
+   array1.concat(array2)
+ end
 
-def using_concat
-end
+ def using_insert(array, n)
+   array.insert(4, n)
+ end
 
-def using_insert
-end
+ def using_uniq(array)
+   array.uniq
+ end
 
-def using_uniq
-end
+ def using_flatten(array)
+   array.flatten
+ end
 
-def using_flatten
-end
+ def using_delete(array, str_del)
+   array.delete(str_del)
+ end
 
-def using_delete
-end
-
-def using_delete_at
-end
+ def using_delete_at(array, index)
+   array.delete_at(index)
+ end
